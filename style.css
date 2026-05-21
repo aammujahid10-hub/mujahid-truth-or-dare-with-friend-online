@@ -1,0 +1,106 @@
+body {
+    background-color: #0f172a;
+    color: white;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* ইনপুট বক্সের স্টাইল (নাম এবং রুম কোড লেখার জায়গা) */
+input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    background-color: #1e293b;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* সব বোতাম বা বাটনের সাধারণ স্টাইল */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #7c3aed;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background-color: #6d28d9;
+}
+
+/* স্ক্রিন বা এলিমেন্ট লুকিয়ে রাখার জন্য */
+.hidden {
+    display: none;
+}
+
+/* গেমের মূল বক্স যেখানে ট্রুথ/ডেয়ারের লেখা দেখাবে */
+.game-box {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    border: 2px solid #7c3aed;
+}
+
+/* প্লেয়ারদের নামের তালিকার স্টাইল */
+#playerList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#playerList li {
+    background-color: #334155;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* যে প্লেয়ারের বর্তমান চাল বা টার্ন, তার নামের স্টাইল */
+#playerList li.active-turn {
+    background-color: #22c55e;
+    font-weight: bold;
+}
+
+/* ট্রুথ, ডেয়ার এবং নেক্সট বোতামগুলোর আলাদা রঙ */
+.btn-truth {
+    background-color: #06b6d4;
+}
+.btn-truth:hover {
+    background-color: #0891b2;
+}
+
+.btn-dare {
+    background-color: #f43f5e;
+}
+.btn-dare:hover {
+    background-color: #e11d48;
+}
+
+.btn-next {
+    background-color: #475569;
+}
+.btn-next:hover {
+    background-color: #334155;
+}
